@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace SimulaTest2
+namespace SimShitty
 {
     class Vehicle
     {
@@ -11,7 +11,7 @@ namespace SimulaTest2
         public Connection Destination { get; set; }
         public RoadElement CurrentLocation { get; set; }
         // Route to follow (not in use as of now).
-        public List<Connection> Route { get; set; }
+        public Stack<Connection> Route { get; set; }
 
         // Only used in initial random-mode.
         public Connection PrevConnection { get; set; }
@@ -19,26 +19,26 @@ namespace SimulaTest2
         public Vehicle(Connection start)
         {
             StartLocation = start;
-            Route = new List<Connection>();
+            Route = new Stack<Connection>();
         }
 
-        public string UpdateLocation(int r, List<Connection> connections)
+        public string UpdateLocation(int random, List<Connection> connections)
         {
+            //TODO: Make this method more accurate/realistic (distance travelled on road)
             if (CurrentLocation == null)
             {
                 CurrentLocation = StartLocation;
                 PrevConnection = StartLocation;
-            } else if (CurrentLocation is Connection)
+            } else if (CurrentLocation is Connection c)
             {
-                var C = (Connection)CurrentLocation;
-                PrevConnection = CurrentLocation as Connection;
-                CurrentLocation = C.Roads[r % C.Roads.Count];
-            } else if (CurrentLocation is Road)
-            {
-                var R = (Road) CurrentLocation;
-                CurrentLocation = connections.FindAll(c => c.Roads.Contains(R)).First(c => c != PrevConnection);
+                PrevConnection = (Connection) CurrentLocation;
+                CurrentLocation = c.Roads[random % c.Roads.Count];
             }
-            
+            else if (CurrentLocation is Road r)
+            {
+                CurrentLocation = connections.FindAll(con => con.Roads.Contains(r)).First(con => con != PrevConnection);
+            }
+
 
             return ToString();
         }
@@ -47,5 +47,8 @@ namespace SimulaTest2
         {
             return "Car is at " + CurrentLocation + " going " + Velocity + " km/h.";
         }
+
+        // TODO: add some acceleration property and -method
+
     }
 }

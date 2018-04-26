@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimulaTest2", "SimulaTest2\SimulaTest2.csproj", "{E678B910-28BD-46D7-A1B0-5D717E6BF922}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimShitty", "SimulaTest2\SimShitty.csproj", "{E678B910-28BD-46D7-A1B0-5D717E6BF922}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

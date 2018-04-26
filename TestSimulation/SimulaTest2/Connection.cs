@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace SimulaTest2
+namespace SimShitty
 {
     class Connection : RoadElement
     {
