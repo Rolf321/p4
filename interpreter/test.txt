@@ -1,0 +1,62 @@
+define roadnetwork NetworkName {
+        connectiontype {
+                #(A, B, E, H, J),
+                @(L, G),
+                !(F),
+                +(C, D, I, N, M, K);
+        }
+
+        define subnetwork one {
+                [A <-|> B <-|> F <-||> D -> E -> I], [ N <-> M <-> L <-> K <-> J <|-|> B <|- K];
+                name {
+                        FrederiksBajersVej (A_B, B_C, C_D, D_E),
+                        SelmaLagerloefsVej (E_I, I_N, N_F),
+                        Arnarsvej (F_L, L_G, G_K);
+                }
+                length {
+                        1(A_B, C_D, X_X),
+                        2(D_E, E_I, N_M, X_X),
+                        3(L_K, X_X);
+                }
+                speed {
+                        80(A_B, C_D, X_X),
+                        50(D_E, E_I, N_M, X_X),
+                        110(L_K, X_X);
+                }
+        }
+
+        define subnetwork Two {
+                [A <-|> B -> C <-||> D -> E -> I], [N <-> M <-> L <-> K <-> J <|-|> B <|- K];
+                name {
+                        FrederiksBajersVej (A_B, B_C, C_D, D_E),
+                        SelmaLagerloefsVej (E_I, I_N, N_F),
+                        Arnarsvej (F_L, L_G, G_K);
+                }
+                length {
+                        1(A_B, C_D, X_X),
+                        2(D_E, E_I, N_M, X_X),
+                        3(L_K, X_X);
+                }
+                speed {
+                        15(A_B, C_D, X_X),
+                        30(D_E, E_I, N_M, X_X),
+                        50(L_K, X_X);
+                }
+        }
+}
+
+define paths {
+        KortRute(A, C, D, E),
+        LangRute(C, A, D, E);
+}
+
+define traffic{
+        (1, 180, 8, randomstart, randomend),
+        (2, 170, 7, A, randomend),
+        (3, 170, 7, KortRute);
+}
+
+define testvehicles {
+        Bimmer(210, 12, B, G),
+        Brumbrum(180, 6, LangRute);
+}

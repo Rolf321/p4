@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="GoldParser">
+      <HintPath>..\..\..\..\..\..\Skrivebord\GoldParserEngineSource_2.1\GoldParserEngine 2.1\Bin\GoldParser.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

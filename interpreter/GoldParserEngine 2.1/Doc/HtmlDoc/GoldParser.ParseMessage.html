@@ -1,0 +1,123 @@
+<html dir="LTR">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <title>ParseMessage Enumeration</title>
+    <xml>
+    </xml>
+    <link rel="stylesheet" type="text/css" href="MSDN.css" />
+  </head>
+  <body id="bodyID" class="dtBODY">
+    <div id="nsbanner">
+      <div id="bannerrow1">
+        <table class="bannerparthead" cellspacing="0">
+          <tr id="hdr">
+            <td class="runninghead">An NDoc Documented Class Library</td>
+            <td class="product">
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="TitleRow">
+        <h1 class="dtH1">ParseMessage Enumeration</h1>
+      </div>
+    </div>
+    <div id="nstext">
+      <p> Available parse messages. </p>
+      <div class="syntax">
+        <div>public enum ParseMessage</div>
+      </div>
+      <h4 class="dtH4">Members</h4>
+      <div class="tablediv">
+        <table class="dtTABLE" cellspacing="0">
+          <tr valign="top">
+            <th width="50%">Member Name</th>
+            <th width="50%">Description</th>
+          </tr>
+<tr valign="top"><td><b>Empty</b></td><td> Nothing </td></tr>
+<tr valign="top"><td><b>TokenRead</b></td><td> Each time a token is read, this message is generated. </td></tr>
+<tr valign="top"><td><b>Reduction</b></td><td> When the engine is able to reduce a rule, this message is returned. The rule that was reduced is set in the GOLDParser's ReduceRule property. The tokens that are reduced and correspond the rule's definition are stored in the Tokens() property. </td></tr>
+<tr valign="top"><td><b>Accept</b></td><td> The engine will returns this message when the source text has been accepted as both complete and correct. In other words, the source text was successfully analyzed. </td></tr>
+<tr valign="top"><td><b>NotLoadedError</b></td><td> Before any parsing can take place, a Compiled Grammar Table file must be loaded. </td></tr>
+<tr valign="top"><td><b>LexicalError</b></td><td> The tokenizer will generate this message when it is unable to recognize a series of characters as a valid token. To recover, pop the invalid token from the input queue. </td></tr>
+<tr valign="top"><td><b>SyntaxError</b></td><td> Often the parser will read a token that is not expected in the grammar. When this happens, the Tokens() property is filled with tokens the parsing engine expected to read. To recover: push one of the expected tokens on the input queue. </td></tr>
+<tr valign="top"><td><b>CommentError</b></td><td> The parser reached the end of the file while reading a comment. This is caused when the source text contains a "run-away" comment, or in other words, a block comment that lacks the delimiter. </td></tr>
+<tr valign="top"><td><b>InternalError</b></td><td> Something is wrong, very wrong. </td></tr>
+<tr valign="top"><td><b>CommentBlockRead</b></td><td> A block comment is complete. When this message is returned, the content of the CurrentComment property is set to the comment text. The text includes starting and ending block comment characters. </td></tr>
+<tr valign="top"><td><b>CommentLineRead</b></td><td> Line comment is read. When this message is returned, the content of the CurrentComment property is set to the comment text. The text includes starting line comment characters. </td></tr></table>
+      </div>
+      <h4 class="dtH4">Requirements</h4>
+      <p>
+        <b>Namespace: </b>
+        <a href="GoldParser.html">GoldParser</a>
+      </p>
+      <p>
+        <b>Assembly: </b>GoldParser (in GoldParser.dll)
+					</p>
+      <h4 class="dtH4">See Also</h4>
+      <p>
+        <a href="GoldParser.html">GoldParser Namespace</a>
+      </p>
+      <object type="application/x-oleobject" classid="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e" viewastext="true" style="display: none;">
+        <param name="Keyword" value="ParseMessage enumeration">
+        </param>
+        <param name="Keyword" value="GoldParser.ParseMessage enumeration">
+        </param>
+        <param name="Keyword" value="Empty enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.Empty enumeration member">
+        </param>
+        <param name="Keyword" value="TokenRead enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.TokenRead enumeration member">
+        </param>
+        <param name="Keyword" value="Reduction enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.Reduction enumeration member">
+        </param>
+        <param name="Keyword" value="Accept enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.Accept enumeration member">
+        </param>
+        <param name="Keyword" value="NotLoadedError enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.NotLoadedError enumeration member">
+        </param>
+        <param name="Keyword" value="LexicalError enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.LexicalError enumeration member">
+        </param>
+        <param name="Keyword" value="SyntaxError enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.SyntaxError enumeration member">
+        </param>
+        <param name="Keyword" value="CommentError enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.CommentError enumeration member">
+        </param>
+        <param name="Keyword" value="InternalError enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.InternalError enumeration member">
+        </param>
+        <param name="Keyword" value="CommentBlockRead enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.CommentBlockRead enumeration member">
+        </param>
+        <param name="Keyword" value="CommentLineRead enumeration member">
+        </param>
+        <param name="Keyword" value="ParseMessage.CommentLineRead enumeration member">
+        </param>
+      </object>
+      <hr />
+      <div id="footer">
+        <p>
+          <a href="mailto:vmNOoroz@hoSPAMtmail.com?subject=An%20NDoc%20Documented%20Class%20Library%20Documentation%20Feedback:%20ParseMessage%20Enumeration">Send comments on this topic.</a>
+        </p>
+        <p>
+        </p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

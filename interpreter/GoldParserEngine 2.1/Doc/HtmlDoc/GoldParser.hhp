@@ -1,0 +1,129 @@
+[FILES]
+GoldParser.html
+GoldParserHierarchy.html
+GoldParser.DfaState.html
+GoldParser.DfaStateMembers.html
+GoldParser.DfaStateConstructor.html
+GoldParser.DfaStateProperties.html
+GoldParser.DfaState.AcceptSymbol.html
+GoldParser.DfaState.Index.html
+GoldParser.Grammar.html
+GoldParser.GrammarMembers.html
+GoldParser.GrammarConstructor.html
+GoldParser.GrammarFields.html
+GoldParser.Grammar.FileHeader.html
+GoldParser.GrammarProperties.html
+GoldParser.Grammar.About.html
+GoldParser.Grammar.Author.html
+GoldParser.Grammar.CaseSensitive.html
+GoldParser.Grammar.DfaInitialState.html
+GoldParser.Grammar.EndSymbol.html
+GoldParser.Grammar.InitialLRState.html
+GoldParser.Grammar.Name.html
+GoldParser.Grammar.StartSymbol.html
+GoldParser.Grammar.Version.html
+GoldParser.LRAction.html
+GoldParser.LRState.html
+GoldParser.LRStateMembers.html
+GoldParser.LRStateConstructor.html
+GoldParser.LRStateProperties.html
+GoldParser.LRState.ActionCount.html
+GoldParser.LRState.Index.html
+GoldParser.LRStateMethods.html
+GoldParser.LRState.GetAction.html
+GoldParser.LRState.GetActionBySymbolIndex.html
+GoldParser.LRStateAction.html
+GoldParser.LRStateActionMembers.html
+GoldParser.LRStateActionConstructor.html
+GoldParser.LRStateActionProperties.html
+GoldParser.LRStateAction.Action.html
+GoldParser.LRStateAction.Index.html
+GoldParser.LRStateAction.Symbol.html
+GoldParser.LRStateAction.Value.html
+GoldParser.ObjectMap.html
+GoldParser.ObjectMapMembers.html
+GoldParser.ObjectMapConstructor.html
+GoldParser.ObjectMapProperties.html
+GoldParser.ObjectMap.Count.html
+GoldParser.ObjectMap.Item.html
+GoldParser.ObjectMap.ReadOnly.html
+GoldParser.ObjectMapMethods.html
+GoldParser.ObjectMap.Add.html
+GoldParser.ObjectMap.GetKey.html
+GoldParser.ObjectMap.Remove.html
+GoldParser.ParseMessage.html
+GoldParser.Parser.html
+GoldParser.ParserMembers.html
+GoldParser.ParserConstructor.html
+GoldParser.ParserProperties.html
+GoldParser.Parser.CharPosition.html
+GoldParser.Parser.CommentText.html
+GoldParser.Parser.CurrentLRState.html
+GoldParser.Parser.Grammar.html
+GoldParser.Parser.LineNumber.html
+GoldParser.Parser.LinePosition.html
+GoldParser.Parser.LineText.html
+GoldParser.Parser.ReductionCount.html
+GoldParser.Parser.ReductionRule.html
+GoldParser.Parser.SourceLineReadCallback.html
+GoldParser.Parser.TextReader.html
+GoldParser.Parser.TokenCharPosition.html
+GoldParser.Parser.TokenLength.html
+GoldParser.Parser.TokenLineNumber.html
+GoldParser.Parser.TokenLinePosition.html
+GoldParser.Parser.TokenString.html
+GoldParser.Parser.TokenSymbol.html
+GoldParser.Parser.TokenSyntaxNode.html
+GoldParser.Parser.TokenText.html
+GoldParser.Parser.TrimReductions.html
+GoldParser.ParserMethods.html
+GoldParser.Parser.GetExpectedTokens.html
+GoldParser.Parser.GetReductionSyntaxNode.html
+GoldParser.Parser.Parse.html
+GoldParser.Parser.PopInputToken.html
+GoldParser.Parser.PushInputToken.html
+GoldParser.Parser.ReadToken.html
+GoldParser.Rule.html
+GoldParser.RuleMembers.html
+GoldParser.RuleConstructor.html
+GoldParser.RuleProperties.html
+GoldParser.Rule.ContainsOneNonTerminal.html
+GoldParser.Rule.Count.html
+GoldParser.Rule.Definition.html
+GoldParser.Rule.Index.html
+GoldParser.Rule.Item.html
+GoldParser.Rule.Name.html
+GoldParser.Rule.NonTerminal.html
+GoldParser.RuleMethods.html
+GoldParser.Rule.ToString.html
+GoldParser.SourceLineReadCallback.html
+GoldParser.Symbol.html
+GoldParser.SymbolMembers.html
+GoldParser.SymbolConstructor.html
+GoldParser.SymbolProperties.html
+GoldParser.Symbol.Index.html
+GoldParser.Symbol.Name.html
+GoldParser.Symbol.SymbolType.html
+GoldParser.SymbolMethods.html
+GoldParser.Symbol.ToString.html
+GoldParser.SymbolType.html
+
+[OPTIONS]
+Title=GoldParser
+Auto Index=Yes
+Binary TOC=Yes
+Compatibility=1.1 or later
+Compiled file=GoldParser.chm
+Default Window=MsdnHelp
+Default topic=GoldParser.html
+Display compile progress=No
+Error log file=GoldParser.log
+Full-text search=Yes
+Index file=GoldParser.hhk
+Language=0x409 English (United States)
+Contents file=GoldParser.hhc
+
+[WINDOWS]
+MsdnHelp="GoldParser Help","GoldParser.hhc","GoldParser.hhk","GoldParser.html","GoldParser.html",,,,,0x62520,220,0x387e,[86,51,872,558],,,,,,,0
+
+[INFOTYPES]
